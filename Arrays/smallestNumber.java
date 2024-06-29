@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class largestNumArray {
+public class smallestNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -11,10 +11,10 @@ public class largestNumArray {
         }
          int num = arr[0];
         for(int i =1;i<n;i++){
-            if (num<arr[i]){
+            if (num>arr[i]){
                 num=arr[i];
             }
         }
-        System.out.println("largest number in the array: "+num);
+        System.out.println("smallest number number in the array: "+num);
     }
 }
